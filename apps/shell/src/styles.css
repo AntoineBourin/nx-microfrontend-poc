@@ -1,3 +1,8 @@
+@import '../../../node_modules/@manutan/parcel-ui/dist/tw-configs/pichon.css';
+@import '../../../node_modules/@manutan/parcel-ui/dist/tw-configs/middle-office.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
