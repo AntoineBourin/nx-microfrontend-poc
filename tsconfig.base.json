@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@manutan-test/common": ["packages/common/src/index.ts"],
       "about/Module": ["apps/about/src/remote-entry.ts"]
     }
   },

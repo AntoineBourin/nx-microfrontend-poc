@@ -1,3 +1,6 @@
+@import '../../../node_modules/@manutan/parcel-ui/dist/tw-configs/pichon.css';
+@import '../../../node_modules/@manutan/parcel-ui/dist/tw-configs/middle-office.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

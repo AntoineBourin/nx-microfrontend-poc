@@ -1,6 +1,8 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
+import { config as baseConfig } from '../../module-federation.config';
 
 const config: ModuleFederationConfig = {
+  ...baseConfig,
   name: 'about',
   exposes: {
     './Module': './src/remote-entry.ts',

@@ -1,5 +1,6 @@
+import { Button, Icon, IconButton } from '@manutan/parcel-ui';
+import { User } from 'packages/common/src/domain/types/user';
 import { Link } from 'react-router-dom';
-import { User } from '../../domain/types/user';
 
 const Header = ({
   user,
@@ -18,9 +19,16 @@ const Header = ({
           <Link to="/about">A propos</Link>
         </li>
         <li>
-          <Link to="#" onClick={handleSignIn}>
+          <Button size="md" onClick={handleSignIn}>
             Se connecter
-          </Link>
+          </Button>
+          <IconButton
+            size="sm"
+            className="bg-button-surface-primary"
+            variant="primary"
+          >
+            <Icon name="search" />
+          </IconButton>
         </li>
       </ul>
       {user && <p>Utilisateur connecté : {user.name}</p>}
